@@ -1,2 +1,2 @@
 # react-three-fiber
-A Augmented Reality (AR) project using React Three Fiber.
+An amazing journey of 3d world in Web
