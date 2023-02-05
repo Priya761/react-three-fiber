@@ -6,7 +6,8 @@ const Navbar = () => {
   const [iteration, setIteration] = useState(0);
   const [text, setText] = useState(title);
 
-  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ.";
+  const letters =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()_+{}[]:;</~>";
 
   useEffect(() => {
     let interval = setInterval(() => {
@@ -18,7 +19,7 @@ const Navbar = () => {
               return title[index];
             }
 
-            return letters[Math.floor(Math.random() * 26)];
+            return letters[Math.floor(Math.random() * 74)];
           })
           .join("")
       );
@@ -28,7 +29,7 @@ const Navbar = () => {
       }
 
       setIteration(iteration + 1 / 3);
-    }, 50);
+    }, 40);
 
     return () => clearInterval(interval);
   }, [iteration, text]);
