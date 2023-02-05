@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -39,7 +39,11 @@ const Navbar = () => {
   return (
     <>
       <div className="w-screen h-12 bg-neutral flex px-6 justify-center items-center font-mono">
-        <NavLink to="home" className="grow text-xl font-bold text-secondary">
+        <NavLink
+          to="home"
+          className="grow text-xl font-bold text-secondary"
+          onM
+        >
           {text}
         </NavLink>
         {/*  */}
