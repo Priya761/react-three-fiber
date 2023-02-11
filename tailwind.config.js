@@ -19,6 +19,8 @@ module.exports = {
       },
       fontFamily: {
         mono: ["Space Mono", "monospace"],
+        cursive: ["Cedarville Cursive", "cursive"],
+        poppins: ["Poppins", "sans-serif"],
       },
     },
   },
